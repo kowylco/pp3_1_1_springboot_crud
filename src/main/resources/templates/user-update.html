@@ -13,7 +13,7 @@
     <input type="text" th:field="*{name}" id="name"/>
     <br>
     <label for="age">Возраст: </label>
-    <input type="number" th:field="*{age}" id="age"/>
+    <input type="number" th:field="*{age}" id="age" min="0" oninput="validity.valid||(value='');"/>
     <br>
     <input type="submit" value="Сохранить изменения">
 </form>
